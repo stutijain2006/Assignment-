@@ -138,7 +138,7 @@ export default function MainSection() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="min-h-[100vh] min-w-[90vw] flex flex-col justify-center items-center text-center p-4 mb-[2vh]">
+        <section ref={sectionRef} className=" relative min-h-[100vh] min-w-[90vw] flex flex-col justify-center items-center text-center p-4 mb-[2vh]">
             <div className="relative flex justify-center items-center text-center flex-col" style={{ width: "60vw", height: "12vh" }}>
                 <ColoredText ref={textRef} />
                 <div ref={cardsref} className="absolute top-0 left-0 w-full h-full flex justify-center items-center gap-4 flex-wrap" style={{ pointerEvents: "none" }}>
