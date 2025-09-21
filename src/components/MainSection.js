@@ -31,7 +31,7 @@ const ColoredText = React.forwardRef((props, ref) => {
             style={{
                 position: "absolute",
                 top: 0,
-                left: "20%",
+                left: "5%",
                 maxWidth: "60vw",
                 margin: "0 auto",
                 height: "100%",
@@ -39,8 +39,8 @@ const ColoredText = React.forwardRef((props, ref) => {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-                fontWeight: "bold",
-                fontSize: "2.2rem",
+                fontWeight: "500",
+                fontSize: "3.5rem",
                 color: "white",
                 textAlign: "center",
                 lineHeight: "1.5"
@@ -139,23 +139,23 @@ export default function MainSection() {
 
     return (
         <section ref={sectionRef} className=" relative min-h-[100vh] min-w-[90vw] flex flex-col justify-center items-center text-center p-4 mb-[2vh]">
-            <div className="relative flex justify-center items-center text-center flex-col" style={{ width: "60vw", height: "12vh" }}>
+            <div className="relative flex justify-center items-center text-center flex-col" style={{ minWidth: "60vw", minHeight: "12vh" }}>
                 <ColoredText ref={textRef} />
-                <div ref={cardsref} className="absolute top-0 left-0 w-full h-full flex justify-center items-center gap-4 flex-wrap" style={{ pointerEvents: "none" }}>
-                    <div className="bg-black p-6 rounded-lg shadow-lg w-64 text-white">
+                <div ref={cardsref} className=" top-0 left-0 w-full h-full flex justify-center items-center gap-4 flex-wrap" style={{ pointerEvents: "none" }}>
+                    <div className="bg-black p-6 rounded-lg shadow-lg sm:w-[250px] text-white">
                         <img src="/assets/image.png" alt="Icon 1" className="mb-4 mx-auto" />
-                        <h3 className="text-xl font-semibold mb-2">Choose a game</h3>
-                        <p className="text-gray-600">Browse our collection of interactive games that fits your audience. </p>
+                        <h3 className="text-lg md:text-xl font-semibold mb-2 text-[rgba(241, 241, 239, 1)]">Choose a game</h3>
+                        <p className="text-[rgba(173, 173, 173, 1)] text-sm md:text-base">Browse our collection of interactive games that fits your audience. </p>
                     </div>
-                    <div className="bg-black p-6 rounded-lg shadow-lg w-64 text-white">
+                    <div className="bg-black p-6 rounded-lg shadow-lg sm:w-[250px] text-white">
                         <img src="/assets/image.png" alt="Icon 1" className="mb-4 mx-auto" />
-                        <h3 className="text-xl font-semibold mb-2">Customize & configure</h3>
-                        <p className="text-grey-600">Set up triggers, rewards and visual elements without writing code.</p>
+                        <h3 className="text-lg md:text-xl font-semibold mb-2 text-[rgba(241, 241, 239, 1)]">Customize & configure</h3>
+                        <p className="text-[rgba(173, 173, 173, 1)] text-sm md:text-base">Set up triggers, rewards and visual elements without writing code.</p>
                     </div>
-                    <div className="bg-black p-6 rounded-lg shadow-lg w-64 text-white">
+                    <div className="bg-black p-6 rounded-lg shadow-lg sm:w-[250px] text-white">
                         <img src="/assets/image.png" alt="Icon 1" className="mb-4 mx-auto" />
-                        <h3 className="text-xl font-semibold mb-2">Deploy Instantly</h3>
-                        <p className="text-grey-600">Add a single line of code and start boosting engagement immediately. </p>
+                        <h3 className="text-lg md:text-xl font-semibold mb-2 text-[rgba(241, 241, 239, 1)]">Deploy Instantly</h3>
+                        <p className="text-[rgba(173, 173, 173, 1)] text-sm md:text-base">Add a single line of code and start boosting engagement immediately. </p>
                     </div>
                 </div>
             </div>
